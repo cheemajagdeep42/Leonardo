@@ -1,4 +1,9 @@
 'use client';
+/**
+ * Footer Component
+ *
+ * A simple footer that is displayed at the bottom of the application.
+ */
 
 import { Box, Text } from '@chakra-ui/react';
 

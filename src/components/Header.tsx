@@ -1,4 +1,11 @@
 'use client';
+/**
+ * Header Component
+ *
+ * Displays user information (username and job title) at the top of the app.
+ * Also provides an "Edit Info" button that allows users to update their information.
+ *
+ */
 
 import { Box, Flex, Button, Link as ChakraLink } from '@chakra-ui/react';
 import NextLink from 'next/link';

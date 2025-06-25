@@ -1,5 +1,9 @@
 'use client';
 
+/**
+ * UserModal Component -A modal dialog that prompts the user to enter their personal information (username and job title).
+ */
+
 import {
     Modal,
     ModalOverlay,

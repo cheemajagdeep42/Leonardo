@@ -1,5 +1,11 @@
 'use client';
 
+/**
+ * HomePage is the landing component for the root route.
+ * It shows a welcome message and a button to navigate to the information page.
+ * This page is only rendered if the user context is available.
+ */
+
 import { useUserContext } from '@/context/UserContext';
 import { useRouter } from 'next/navigation';
 import { Button, Box, Text } from '@chakra-ui/react';

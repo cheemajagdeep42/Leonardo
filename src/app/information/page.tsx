@@ -1,4 +1,9 @@
 'use client';
+/**
+ * InformationPage component displays a paginated list of characters.
+ * It reads the current page number from the URL query parameters and 
+ * passes it to the CharacterList component for data fetching.
+ */
 
 import { useSearchParams } from 'next/navigation';
 import { Box } from '@chakra-ui/react';

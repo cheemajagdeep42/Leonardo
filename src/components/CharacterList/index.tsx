@@ -1,4 +1,8 @@
 'use client';
+/**
+ * CharacterList Component
+ * This component fetches and displays a paginated list of characters using Apollo Client and the Rick and Morty GraphQL API.
+ */
 
 import {
     Box,

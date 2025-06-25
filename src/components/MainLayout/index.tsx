@@ -1,3 +1,7 @@
+/**
+ * Acts as the main structural layout for the application. It wraps the core UI with a header, footer, and user information modal.
+ */
+
 import { useUserContext } from '@/context/UserContext';
 import { useEffect, useState } from 'react';
 import UserModal from '@/components/UserModal';
