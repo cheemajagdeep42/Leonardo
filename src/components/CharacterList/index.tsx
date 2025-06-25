@@ -39,7 +39,7 @@ export const CHARACTERS_QUERY = gql`
 
 export default function CharacterList({ currentPage }: { currentPage: number }) {
     const router = useRouter();
-    const [selected, setSelected] = useState<any>(null);
+    const [selected, setSelected] = useState<Character | undefined>();
     const { isOpen, onOpen, onClose } = useDisclosure();
 
     const { data, loading, error } = useQuery(CHARACTERS_QUERY, {
@@ -50,7 +50,15 @@ export default function CharacterList({ currentPage }: { currentPage: number }) 
         router.push(`/information?page=${page}`);
     };
 
-    const handleClick = (item: any) => {
+    type Character = {
+        id: string;
+        name: string;
+        image: string;
+        status: string;
+        species: string;
+    };
+
+    const handleClick = (item: Character) => {
         setSelected(item);
         onOpen();
     };
@@ -83,7 +91,7 @@ export default function CharacterList({ currentPage }: { currentPage: number }) 
             </Flex>
 
             <Grid templateColumns="repeat(auto-fit, minmax(150px, 1fr))" gap={6}>
-                {data.characters.results.map((char: any) => (
+                {data.characters.results.map((char: Character) => (
                     <Box
                         key={char.id}
                         borderWidth="1px"

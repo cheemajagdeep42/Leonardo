@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import CharacterList, { CHARACTERS_QUERY } from '@/components/CharacterList';
 import { MockedProvider } from '@apollo/client/testing';
 
